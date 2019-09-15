@@ -1,0 +1,79 @@
+<html>
+
+<head>
+
+<title>Login</title>
+
+<style>
+
+.s1
+{
+	font-family:Agency FB;
+	text-align: center;
+}
+
+.s2
+{
+	font-family:Agency FB;
+	text-align:center;
+	font-size:20px
+}
+
+
+.s3
+{
+	border:2px solid black;
+	box-sizing:content-box;
+	margin-left:400px;
+	margin-top:125px;
+	margin-right:400px;
+}
+
+button
+{
+	background-color:#4CAF50;
+	color:white;
+	border: none;
+	width:25%;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:200px;
+	padding:5px 24px;
+	cursor: pointer;
+	font-family:Agency FB;
+	text-align:center;
+	font-size:16px;
+}
+
+</style>
+
+<body>
+
+<div class = "s3">
+
+<h1 class = "s1">LOGIN</h1>
+
+<form method = "post">
+
+<p class="s2"><b>Email:</b><br>
+<input type = "email" name = "e" required> </input></p>
+
+<p class = "s2"><b>Password:</b><br>
+<input type="password" name = "p" pattern="[1000-9999]{4}" title="4 digits only" required> </input></p>
+
+<p><button type = "submit" id = "id1" onclick = "P1()"><b>LOGIN</b></button></p>
+
+<p style="color:blue" class ="s2"><ins>Forgot password?</ins></p>
+</form>
+</div>
+
+<script>
+
+function P1()
+{
+	alert("Hello ");
+}
+
+</script>
+</body>
+</html>
