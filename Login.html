@@ -56,12 +56,12 @@ button
 <form method = "post">
 
 <p class="s2"><b>Email:</b><br>
-<input type = "email" id = "e1" required> </input></p>
+<input type = "email" id = "id1" required> </input></p>
 
 <p class = "s2"><b>Password:</b><br>
-<input type="password" name = "p" pattern="[1000-9999]{4}" title="4 digits only" required> </input></p>
+<input type="password" id = "id2" pattern="[1000-9999]{4}" title="4 digits only" required> </input></p>
 
-<p><button type = "submit" id = "id1" onclick = "P1()"><b>LOGIN</b></button></p>
+<p><button type = "submit" id = "id3" onclick = "P1()"><b>LOGIN</b></button></p>
 
 <p style="color:blue" class ="s2"><ins>Forgot password?</ins></p>
 </form>
@@ -71,8 +71,8 @@ button
 
 function P1()
 {
-	var e2 = document.getElementById("e1");
-	alert("Hello "+ e1.innerHTML);
+	var x = document.getElementById("id1");
+	alert("Hello "+ x.innerHTML);
 }
 
 </script>
