@@ -56,7 +56,7 @@ button
 <form method = "post">
 
 <p class="s2"><b>Email:</b><br>
-<input type = "email" name = "e" required> </input></p>
+<input type = "email" name = "e" id = "e2" required> </input></p>
 
 <p class = "s2"><b>Password:</b><br>
 <input type="password" name = "p" pattern="[1000-9999]{4}" title="4 digits only" required> </input></p>
@@ -71,7 +71,8 @@ button
 
 function P1()
 {
-	alert("Hello ");
+	var e1 = document.getElementById("e2");
+	alert("Hello "+e1.innerHTML);
 }
 
 </script>
