@@ -53,28 +53,19 @@ button
 
 <h1 class = "s1">LOGIN</h1>
 
-<form method = "post">
+<form action = "loginhandle.php" method = "post">
 
 <p class="s2"><b>Email:</b><br>
-<input type = "email" id = "id1" required> </input></p>
+<input type = "email" name = "email1" required> </input></p>
 
 <p class = "s2"><b>Password:</b><br>
-<input type="password" id = "id2" pattern="[1000-9999]{4}" title="4 digits only" required> </input></p>
+<input type="password" name = "pass1" pattern="[1000-9999]{4}" title="4 digits only" required> </input></p>
 
-<p><button type = "submit" id = "id3" onclick = "P1()"><b>LOGIN</b></button></p>
+<p><button type = "submit" name = "id1" onclick = "P1()"><b>LOGIN</b></button></p>
 
 <p style="color:blue" class ="s2"><ins>Forgot password?</ins></p>
 </form>
 </div>
 
-<script>
-
-function P1()
-{
-	var x = document.getElementById("id1");
-	alert("Hello "+ x.innerHTML);
-}
-
-</script>
 </body>
 </html>
